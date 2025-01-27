@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="#">
+  <title>Three Test</title>
+  <link rel="stylesheet" href="/src/client/style.css">
+  <style>
+    nav {
+      position: absolute;
+      bottom: 10px; left: 10px;
+      display: flex;
+    }
+    nav div {
+      border-radius: 6px;
+      background: deeppink;
+      padding: 3px 10px;;
+      display: inline-block;
+    }
+    nav a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.0625rem;
+      transform: translateY(0.05rem);
+    }
+  </style>
+  
+</head>
+<body>
+  <nav>
+  <% if (!first) {%>
+    <div id="previous">
+      <a href="/three/<%= id - 1 %>">&lt;</a>
+    </div>
+    <% } %>
+    <div id="back">
+      <a href="/">^</a>
+    </div>
+  <% if (!last) {%>
+    <div id="next">
+      <a href="/three/<%= id + 1 %>">&gt;</a>
+    </div>
+    <% } %>
+  </nav>
+  <script type="module" src="/src/client/three/<%= jsPath %>"></script>
+</body>
+</html>

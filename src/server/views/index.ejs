@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="#">
+  <title>Three Tests</title>
+  <style>
+    :root {
+      font-family: sans-serif;
+      font-size: 100%;
+    }
+    h1 { font-size: 1rem;}
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover { color: orangered; }
+  </style>
+</head>
+<body>
+  <h1>Three Tests</h1>
+  <% if (fileList) { %>
+  <ul>
+  <% for (const file of fileList) { %>
+    <li><a href="/three/<%= file.counter %>"><%= file.name %></a></li>
+  <% } %>
+  </ul>
+  <% } %>
+</body>
+</html>

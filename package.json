@@ -1,0 +1,35 @@
+{
+  "name": "Three Express",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server/main.js -w src",
+    "start": "NODE_ENV=production node src/server/main.js",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^8.57.1",
+    "globals": "^15.14.0",
+    "nodemon": "^3.0.1",
+    "standard": "^17.1.2",
+    "vite": "^5.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.18.2",
+    "prettier": "^3.4.2",
+    "three": "^0.172.0",
+    "vite-express": "*"
+  },
+  "standard": {
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  }
+}

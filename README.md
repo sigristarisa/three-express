@@ -6,11 +6,13 @@ An [Express.js](https://expressjs.com/) app to quickly create a lot of [Three.js
 
 `npm run dev`
 
+Node version `v22.8.0`
+
 ## Beware!
 
 This setup is best described as *quick & dirty*. No thought has been invested into deployment or the building process.
 
-Before deploying you shoult add `.env` to .gitiginore.
+Before deploying you should add `.env` to .gitignore.
 
 ## How this works
 
@@ -22,8 +24,8 @@ Before deploying you shoult add `.env` to .gitiginore.
 - the view-templates are `/src/server/views`
 	- `index.ejs` renders a list of all scenes
 	- `three-scene.ejs` shows a Three.js scene.
-- the js files in `src/client/three/` are namend `scene-N.js`. `N` is a number, corresponding to `:id` in the route `/three/:id`.
-- every js file you add in the `src/client/three/` will create a new route.
+- The js files in `src/client/three/` are namend `scene-N.js`. `N` is a number, corresponding to `:id` in the route `/three/:id`.
+- Every js file you add in the `src/client/three/` will create a new route.
 
 ## Linting
 

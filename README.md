@@ -5,6 +5,7 @@ An [Express.js](https://expressjs.com/) app to quickly create a lot of [Three.js
 ## Start
 
 $ `npm install`
+
 $ `npm run dev`
 
 Node version `v22.8.0`
